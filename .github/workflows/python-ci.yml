@@ -20,3 +20,6 @@ jobs:
 
       - name: Check Python code
         run: python -m py_compile hospital_application.py
+
+      - name: Build Docker image
+        run: docker build -t hospital-registration .
